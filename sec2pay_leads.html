@@ -667,219 +667,309 @@
                     </div>
                   </div>
                   <div class="table-responsive">
-                    <table class="table card-table table-vcenter text-nowrap datatable">
-                      <thead>
-                        <tr>
-                           <th class="w-1">View Lead</th>
-                          <th class="w-1">Sr.No  </th>
-                          <th>  SALES PERSON</th>
-                          <th>  EMPLOYEE ID </th>
-                          <th> SUBJECT </th>
-                          <th> SOURCE </th>
-                          <th> LEAD VALUE </th>
-                          <th>  LEAD TYPE </th>
-                          <th> TAG NAME</th>
+<!-- Include Bootstrap 5 and Font Awesome CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-                          <th> CONTACT PERSON </th>
-                          <th> STAGE </th>
-                          <th> ROTTEN LEAD </th>
-                          <th>  EXPECTED CLOSE DATE </th>
-                          <th> CREATED AT</th>
-                          <th> ACTIONS</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                         <td class="text-center">
-                            <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                <path d="M12 12m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"></path>
-                              </svg>
-                            </a>
-                          </td>
-                          <td><span class="text-secondary">1</span></td>
-                          <td><a href="invoice.html" class="text-reset" tabindex="-1"> Sales Person 1 </a></td>
-                          <td> 
-                           SEC2PAY-1
-                          </td>
-                          <td>
-                            Subject Name
-                          </td>
-                          <td>
-                             Email
-                          </td>
-                          <td>
-                            ₹2.00
-                          </td>
-                          <td>
-                            New Business
-                          </td>
+<style>
+  /* Custom styling for Quick Actions button */
+  .quick-action-btn {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    font-weight: 100;
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+  }
 
-                          <td>
-                          ----------
-                          </td>
-                          <td>
-                           Abhishek Chandane
-                          </td>
-                          <td>
-                          New Lead
-                          </td>
-                          <td>
-                            Yes
-                          </td>
-                          <td>
+  .quick-action-btn:hover {
+    background: linear-gradient(90deg, #0056b3, #004080);
+    color: #fff;
+  }
 
-                            2024-12-07
-                          </td>
-                          <td>
-                            2024-12-06 16:15:40
-                          </td>
+  /* Dropdown menu styling */
+  .quick-action-dropdown {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 
-                          <td class="text-end">
-                            <span class="dropdown">
-                              <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
-                              <div class="dropdown-menu dropdown-menu-end">
-                                <a class="dropdown-item" href="#">
-                                  Action
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                  Another action
-                                </a>
-                              </div>
-                            </span>
-                          </td>
-                        </tr> 
+  .quick-action-dropdown .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
 
-                        <tr>
-                            <td class="text-center">
-                                <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
-                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                    <path d="M12 12m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"></path>
-                                  </svg>
-                                </a>
-                              </td>
-                            <td><span class="text-secondary">2</span></td>
-                            <td><a href="invoice.html" class="text-reset" tabindex="-1"> Sales Person 1 </a></td>
-                            <td> 
-                             SEC2PAY-1
-                            </td>
-                            <td>
-                              Subject Name
-                            </td>
-                            <td>
-                               Email
-                            </td>
-                            <td>
-                              ₹2.00
-                            </td>
-                            <td>
-                              New Business
-                            </td>
-  
-                            <td>
-                            ----------
-                            </td>
-                            <td>
-                             Abhishek Chandane
-                            </td>
-                            <td>
-                            New Lead
-                            </td>
-                            <td>
-                              Yes
-                            </td>
-                            <td>
-  
-                              2024-12-07
-                            </td>
-                            <td>
-                              2024-12-06 16:15:40
-                            </td>
-  
-                            <td class="text-end">
-                              <span class="dropdown">
-                                <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                  <a class="dropdown-item" href="#">
-                                    Action
-                                  </a>
-                                  <a class="dropdown-item" href="#">
-                                    Another action
-                                  </a>
-                                </div>
-                              </span>
-                            </td>
-                          </tr> 
+  .quick-action-dropdown .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
 
-                          <tr>
-                            <td class="text-center">
-                                <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
-                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                                    <path d="M12 12m-3.5 0a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0"></path>
-                                  </svg>
-                                </a>
-                              </td>
-                            <td><span class="text-secondary">3</span></td>
-                            <td><a href="invoice.html" class="text-reset" tabindex="-1"> Sales Person 1 </a></td>
-                            <td> 
-                             SEC2PAY-1
-                            </td>
-                            <td>
-                              Subject Name
-                            </td>
-                            <td>
-                               Email
-                            </td>
-                            <td>
-                              ₹2.00
-                            </td>
-                            <td>
-                              New Business
-                            </td>
-  
-                            <td>
-                            ----------
-                            </td>
-                            <td>
-                             Abhishek Chandane
-                            </td>
-                            <td>
-                            New Lead
-                            </td>
-                            <td>
-                              Yes
-                            </td>
-                            <td>
-  
-                              2024-12-07
-                            </td>
-                            <td>
-                              2024-12-06 16:15:40
-                            </td>
-  
-                            <td class="text-end">
-                              <span class="dropdown">
-                                <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                  <a class="dropdown-item" href="#">
-                                    Action
-                                  </a>
-                                  <a class="dropdown-item" href="#">
-                                    Another action
-                                  </a>
-                                </div>
-                              </span>
-                            </td>
-                          </tr> 
+  .quick-action-dropdown .dropdown-item i {
+    font-size: 16px;
+    color: #007bff;
+  }
+</style>
 
-                      </tbody>
-                    </table>
+<table class="table card-table table-vcenter text-nowrap datatable">
+  <thead>
+    <tr>
+      <th class="w-1">View Lead</th>
+      <th class="w-1">Sr.No</th>
+      <th>LAST MODIFIED</th>
+      <th>CREATED AT</th>
+      <th>LEAD NAME</th>
+      <th>LEAD OWNER</th>
+      <th>QUICK ACTION</th>
+      <th>SALES PERSON</th>
+      <th>EMPLOYEE ID</th>
+      <th>SUBJECT</th>
+      <th>LEAD SOURCE</th>
+      <th>LEAD VALUE</th>
+      <th>LEAD TYPE</th>
+      <th>CONTACT PERSON</th>
+      <th>STAGE</th>
+      <th>ACTIONS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-center">
+        <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
+          <i class="fas fa-eye"></i>
+        </a>
+      </td>
+      <td><span class="text-secondary">1</span></td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>Lead Name</td>
+      <td>Abhishek Chandane</td>
+      <td>
+        <div class="dropdown">
+          <button class="btn quick-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bolt"></i>
+          </button>
+          <ul class="dropdown-menu quick-action-dropdown">
+            <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i> Call Now</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-sms"></i> Send SMS</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Meeting</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales Person 1</a></td>
+      <td>SEC2PAY-1</td>
+      <td>Subject Name</td>
+      <td>
+        <i class="fas fa-envelope"></i> Email
+      </td>
+      <td>₹2.00</td>
+      <td>New Business</td>
+      <td>Abhishek Chandane</td>
+      <td>New Lead</td>
+      <td class="text-end">
+        <span class="dropdown">
+          <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+          </div>
+        </span>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="text-center">
+        <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
+          <i class="fas fa-eye"></i>
+        </a>
+      </td>
+      <td><span class="text-secondary">1</span></td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>Lead Name</td>
+      <td>Abhishek Chandane</td>
+      <td>
+        <div class="dropdown">
+          <button class="btn quick-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bolt"></i>
+          </button>
+          <ul class="dropdown-menu quick-action-dropdown">
+            <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i> Call Now</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-sms"></i> Send SMS</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Meeting</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales Person 1</a></td>
+      <td>SEC2PAY-1</td>
+      <td>Subject Name</td>
+      <td>
+        <i class="fas fa-envelope"></i> Email
+      </td>
+      <td>₹2.00</td>
+      <td>New Business</td>
+      <td>Abhishek Chandane</td>
+      <td>New Lead</td>
+      <td class="text-end">
+        <span class="dropdown">
+          <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+          </div>
+        </span>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="text-center">
+        <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
+          <i class="fas fa-eye"></i>
+        </a>
+      </td>
+      <td><span class="text-secondary">1</span></td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>Lead Name</td>
+      <td>Abhishek Chandane</td>
+      <td>
+        <div class="dropdown">
+          <button class="btn quick-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bolt"></i>
+          </button>
+          <ul class="dropdown-menu quick-action-dropdown">
+            <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i> Call Now</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-sms"></i> Send SMS</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Meeting</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales Person 1</a></td>
+      <td>SEC2PAY-1</td>
+      <td>Subject Name</td>
+      <td>
+        <i class="fas fa-envelope"></i> Email
+      </td>
+      <td>₹2.00</td>
+      <td>New Business</td>
+      <td>Abhishek Chandane</td>
+      <td>New Lead</td>
+      <td class="text-end">
+        <span class="dropdown">
+          <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+          </div>
+        </span>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="text-center">
+        <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
+          <i class="fas fa-eye"></i>
+        </a>
+      </td>
+      <td><span class="text-secondary">1</span></td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>Lead Name</td>
+      <td>Abhishek Chandane</td>
+      <td>
+        <div class="dropdown">
+          <button class="btn quick-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bolt"></i>
+          </button>
+          <ul class="dropdown-menu quick-action-dropdown">
+            <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i> Call Now</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-sms"></i> Send SMS</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Meeting</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales Person 1</a></td>
+      <td>SEC2PAY-1</td>
+      <td>Subject Name</td>
+      <td>
+        <i class="fas fa-phone"></i> Email
+      </td>
+      <td>₹2.00</td>
+      <td>New Business</td>
+      <td>Abhishek Chandane</td>
+      <td>New Lead</td>
+      <td class="text-end">
+        <span class="dropdown">
+          <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+          </div>
+        </span>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="text-center">
+        <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
+          <i class="fas fa-eye"></i>
+        </a>
+      </td>
+      <td><span class="text-secondary">1</span></td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>17-01-2025 | 05:33:43 PM</td>
+      <td>Lead Name</td>
+      <td>Abhishek Chandane</td>
+      <td>
+        <div class="dropdown">
+          <button class="btn quick-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bolt"></i>
+          </button>
+          <ul class="dropdown-menu quick-action-dropdown">
+            <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i> Call Now</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-sms"></i> Send SMS</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Meeting</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a></li>
+          </ul>
+        </div>
+      </td>
+      <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales Person 1</a></td>
+      <td>SEC2PAY-1</td>
+      <td>Subject Name</td>
+      <td>
+        <i class="fas fa-envelope"></i> Email
+      </td>
+      <td>₹2.00</td>
+      <td>New Business</td>
+      <td>Abhishek Chandane</td>
+      <td>New Lead</td>
+      <td class="text-end">
+        <span class="dropdown">
+          <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+          </div>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+                    
+                    
                   </div>
                   <div class="card-footer d-flex align-items-center">
                     <p class="m-0 text-secondary">Showing <span>1</span> to <span>8</span> of <span>16</span> entries</p>
