@@ -713,8 +713,44 @@
         font-size: 16px;
         color: #007bff;
       }
+
+
+
+
+
+        .tooltip {
+        background-color: #333333 !important;                 
+        color: #fff !important;                 
+        border-radius: 8px !important;                 
+                      
+        font-size: 14px;                 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);                 
+        max-width: 250px;                 
+      }
+
+      .tooltip .tooltip-inner {
+        background: linear-gradient(90deg, #007bff, #0056b3) !important;
+        color: #fff !important;
+        text-align: left !important;  
+        font-family: Arial, sans-serif;
+      }
+
+      .tooltip-arrow {
+        border-top-color: #333 !important;  
+      }
+      .tooltip.fade {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .tooltip.show {
+        opacity: 1;
+  }
+
+
       /* Edited : Abhishek Chandane  */
     </style>
+
+ 
 
     <!-- Edited : Abhishek Chandane -->
 
@@ -747,11 +783,34 @@
                 </a>
               </td>
               <td><span class="text-secondary">1</span></td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>Lead Name</td>
+
+              <td>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
+              </td>
+              <td>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
+              </td>
+
+              <td>
+                <!-- Lead Name with Detailed Tooltip -->
+                <span 
+                  data-bs-toggle="tooltip" 
+                  data-bs-html="true" 
+                  title="
+                    <b>Lead Name:</b> Lead Name<br>
+                    <b>Contact:</b> +91-9876543210<br>
+                    <b>Owner:</b> Abhishek Chandane<br>
+                    <b>Source:</b> Email<br>
+                    <b>Value:</b> ₹2.00
+                  ">
+                  Lead Name
+                </span>
+              </td>
               <td>Abhishek Chandane</td>
               <td>
+ 
                 <div class="dropdown">
                   <button class="btn quick-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fas fa-bolt"></i>
@@ -760,7 +819,12 @@
                     <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i> Call Now</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fas fa-sms"></i> Send SMS</a></li>
                     <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Meeting</a></li>
-                    <li><a class="dropdown-item" href="sec2pay_edit_lead.html"><i class="fas fa-edit"></i> Edit</a></li>
+                    <li>
+                      <a class="dropdown-item "  data-bs-toggle="modal" data-bs-target="#modal-full-width">
+                        <i class="fas fa-edit"></i> 
+                        Edit
+                      </a>
+                    </li>
                     <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a></li>
                   </ul>
                 </div>
@@ -793,9 +857,101 @@
                 </a>
               </td>
               <td><span class="text-secondary">1</span></td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>Lead Name</td>
+              <td>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
+              </td>
+              <td>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
+              </td>
+              <td> 
+                <span 
+                  data-bs-toggle="tooltip" 
+                  data-bs-html="true" 
+                  title="
+                    <b>Lead Name:</b> Lead Name<br>
+                    <b>Contact:</b> +91-9876543210<br>
+                    <b>Owner:</b> Abhishek Chandane<br>
+                    <b>Source:</b> Email<br>
+                    <b>Value:</b> ₹2.00
+                  ">
+                  Lead Name
+                </span>
+              </td>
+              <td>Abhishek Chandane</td>
+              <td>
+                <div class="dropdown">
+                  <button class="btn quick-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bolt"></i>
+                  </button>
+                  <ul class="dropdown-menu quick-action-dropdown">
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i> Call Now</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-sms"></i> Send SMS</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Meeting</a></li>
+                    <li>
+                      <a class="dropdown-item btn"  data-bs-toggle="modal" data-bs-target="#modal-full-width">
+                        <i class="fas fa-edit"></i> 
+                        Edit
+                      </a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a></li>
+                  </ul>
+                </div>
+              </td>
+              <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales Person 1</a></td>
+              <td>SEC2PAY-1</td>
+              <td>Subject Name</td>
+              <td>
+                <i class="fas fa-envelope"></i> Email
+              </td>
+              <td>₹2.00</td>
+              <td>New Business</td>
+              <td>Abhishek Chandane</td>
+              <td>New Lead</td>
+              <td class="text-end">
+                <span class="dropdown">
+                  <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
+                  <div class="dropdown-menu dropdown-menu-end">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </div>
+                </span>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="text-center">
+                <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
+                  <i class="fas fa-eye"></i>
+                </a>
+              </td>
+              <td><span class="text-secondary">1</span></td>
+              <td>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
+              </td>
+              <td>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
+              </td>
+
+              <td>
+                <!-- Lead Name with Detailed Tooltip -->
+                <span 
+                  data-bs-toggle="tooltip" 
+                  data-bs-html="true" 
+                  title="
+                    <b>Lead Name:</b> Lead Name<br>
+                    <b>Contact:</b> +91-9876543210<br>
+                    <b>Owner:</b> Abhishek Chandane<br>
+                    <b>Source:</b> Email<br>
+                    <b>Value:</b> ₹2.00
+                  ">
+                  Lead Name
+                </span>
+              </td>
+
               <td>Abhishek Chandane</td>
               <td>
                 <div class="dropdown">
@@ -839,55 +995,29 @@
                 </a>
               </td>
               <td><span class="text-secondary">1</span></td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>Lead Name</td>
-              <td>Abhishek Chandane</td>
               <td>
-                <div class="dropdown">
-                  <button class="btn quick-action-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-bolt"></i>
-                  </button>
-                  <ul class="dropdown-menu quick-action-dropdown">
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-phone"></i> Call Now</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-sms"></i> Send SMS</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-calendar-alt"></i> Meeting</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-edit"></i> Edit</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Delete</a></li>
-                  </ul>
-                </div>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
               </td>
-              <td><a href="invoice.html" class="text-reset" tabindex="-1">Sales Person 1</a></td>
-              <td>SEC2PAY-1</td>
-              <td>Subject Name</td>
               <td>
-                <i class="fas fa-envelope"></i> Email
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
               </td>
-              <td>₹2.00</td>
-              <td>New Business</td>
-              <td>Abhishek Chandane</td>
-              <td>New Lead</td>
-              <td class="text-end">
-                <span class="dropdown">
-                  <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
-                  <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </div>
+              <td>
+                <!-- Lead Name with Detailed Tooltip -->
+                <span 
+                  data-bs-toggle="tooltip" 
+                  data-bs-html="true" 
+                  title="
+                    <b>Lead Name:</b> Lead Name<br>
+                    <b>Contact:</b> +91-9876543210<br>
+                    <b>Owner:</b> Abhishek Chandane<br>
+                    <b>Source:</b> Email<br>
+                    <b>Value:</b> ₹2.00
+                  ">
+                  Lead Name
                 </span>
               </td>
-            </tr>
-
-            <tr>
-              <td class="text-center">
-                <a href="sec2pay_view_lead.html" class="text-primary" title="View Lead">
-                  <i class="fas fa-eye"></i>
-                </a>
-              </td>
-              <td><span class="text-secondary">1</span></td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>Lead Name</td>
               <td>Abhishek Chandane</td>
               <td>
                 <div class="dropdown">
@@ -931,9 +1061,29 @@
                 </a>
               </td>
               <td><span class="text-secondary">1</span></td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>17-01-2025 | 05:33:43 PM</td>
-              <td>Lead Name</td>
+              <td>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
+              </td>
+              <td>
+                <span>17-01-2025</span><br>
+                <span>05:33:43 PM</span>
+              </td>
+              <td>
+                <!-- Lead Name with Detailed Tooltip -->
+                <span 
+                  data-bs-toggle="tooltip" 
+                  data-bs-html="true" 
+                  title="
+                    <b>Lead Name:</b> Lead Name<br>
+                    <b>Contact:</b> +91-9876543210<br>
+                    <b>Owner:</b> Abhishek Chandane<br>
+                    <b>Source:</b> Email<br>
+                    <b>Value:</b> ₹2.00
+                  ">
+                  Lead Name
+                </span>
+              </td>
               <td>Abhishek Chandane</td>
               <td>
                 <div class="dropdown">
@@ -971,6 +1121,180 @@
             </tr>
           </tbody>
 </table>
+
+      <div class="modal modal-blur fade" id="modal-full-width" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog  modal-xl modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Full width modal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                            <!-- Edited : Abhishek Chandane --> 
+            <form id="task-form" action="{{ route('lead.edit') }}" method="POST" >
+              <!-- @csrf --> 
+
+              <div class="card-body">
+                  <div class="row">
+                      <!-- 1st Column: Lead Owner  , Lead Group, Mobile
+                        Next Follow Up Date, Sales Person Lead Remark  -->
+                      <div class="col-4" >
+                          <div class="mb-3">
+                              <label class="form-label">Lead Owner</label>
+                              <select class="form-select" name="Lead Owner" data-validetta="required">
+                                  <option value="Abhishek chandane">Abhishek chandane</option>
+                                  <option value="1">1</option>
+                                  <option value="1">1</option>
+                                  <option value="1">1</option>
+                              </select>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label">Lead Group</label>
+                              <select class="form-select" name="Lead Group" data-validetta="required">
+                                  <option value="Deafault">Deafault</option>
+                                  <option value="1">1</option>
+                                  <option value="1">1</option>
+                                  <option value="1">1</option>
+                              </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">   Mobile</label>
+                            <input class="form-control" name="Mobile" placeholder="Enter Mobile Number" data-validetta="required">
+                        </div> 
+                          <div class="mb-3">
+                              <label class="form-label">Lead Requirement</label>
+                              <textarea class="form-control" data-bs-toggle="autosize" placeholder="Lead Requirement…"></textarea>
+                            </div> 
+  
+                            <div class="mb-3">
+                              <label class="form-label">Enquiry Types </label>
+                              <textarea class="form-control" data-bs-toggle="autosize" placeholder="Enquiry Types…"></textarea>
+                            </div> 
+                        
+                      </div>
+    
+                      <!-- 2nd Column: Start Date, End Date, Flag -->
+                      <div class="col-4 " >
+                          <div class="mb-3">
+                              <label class="form-label">Next Follow Up Date</label>
+                              <input class="form-control" type="date" name="start_date" placeholder="Select a date" data-validetta="required,date">
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label">Lead Filter </label>
+                              <select class="form-select" name="Lead Filter" data-validetta="required">
+                                  <option >Select Lead Filter</option>
+                                  <option value="1">1</option>
+                                  <option value="1">1</option>
+                                  <option value="1">1</option>
+                              </select>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label">Email</label>
+                              <input class="form-control" type="text" name="flag" placeholder="Email" data-validetta="required">
+                          </div>
+
+                          <div class="mb-3">
+                              <label class="form-label">Website</label>
+                              <input class="form-control" type="text" name="flag" placeholder="Website" data-validetta="required">
+                          </div>
+
+                          
+                          <div class="mb-3">
+                              <label class="form-label">Lead Stages</label>
+                              <select class="form-select" name="Lead Stages" data-validetta="required">
+                                  <option >  Lead Stages</option>
+                                  <option value="1">Stages 1</option>
+                                  <option value="2"> Stages 2</option>
+                                  <option value="3"> Stages 3</option>
+                              </select>
+                          </div>
+
+                                                      
+                          <div class="mb-3">
+                              <label class="form-label">Lead Revenue</label>
+                              
+                              <div class="input-group">
+                                  <span class="input-group-text">
+                                   INR
+                                  </span>
+                                  <input type="text" class="form-control" name="Lead Revenue" placeholder="Lead Revenue" data-validetta="required">
+                                </div> 
+                          </div>
+                      </div>
+    
+                      <!-- 3rd Column: Priority -->
+                      <div class="col-4" >
+                          <div class="mb-3">
+                              <label class="form-label">Sales Person Lead emarks</label>
+                              <input type="text" class="form-control" name="Sales Person Lead emarks" placeholder="Sales Person Lead emarks" data-validetta="required">
+                                
+                          </div>
+
+                          <div class="mb-3">
+                              <label class="form-label">    Lead  Name</label>
+                              <input type="text" class="form-control" name="Lead  Name" placeholder="Lead  Name" data-validetta="required">    
+                          </div>
+
+                          <div class="mb-3">
+                              <label class="form-label">    product</label>
+                              <select class="form-select" name="Product" data-validetta="required">
+                                  <option >  Select Produc</option>
+                                  <option value="1">product 1</option>
+                                  <option value="2"> product 2</option>
+                                  <option value="3"> product 3</option>
+                              </select>
+                          </div>
+
+                          <div class="mb-3">
+                              <label class="form-label">Lead Type</label>
+                              <select class="form-select" name="Lead Type" data-validetta="required">
+                                  <option > Select Lead Type</option>
+                                  <option value="1">Lead Type 1</option>
+                                  <option value="2"> Lead Type 2</option>
+                                  <option value="3"> Lead Type 3</option>
+                              </select>
+                          </div>
+
+                          <div class="mb-3">
+                              <label class="form-label">Lead Source</label>
+                              <select class="form-select" name="Lead Source" data-validetta="required">
+                                  <option > Select Lead Source</option>
+                                  <option value="1">Lead Source 1</option>
+                                  <option value="2"> Lead Source 2</option>
+                                  <option value="3"> Lead Source 3</option>
+                              </select>
+                          </div>
+
+                          <div class="mb-3">
+                              <label class="form-label">    Lead  Name</label>
+                              <input type="text" class="form-control" name="Lead  Name" placeholder="Lead  Name" data-validetta="required">    
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+ 
+            </form>
+           <!-- Edited : Abhishek Chandane --> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Update  Lead</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<script> 
+  document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
+</script>
+
     <!-- Edited : Abhishek Chandane -->
 
 
