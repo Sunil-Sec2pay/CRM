@@ -46,13 +46,10 @@ if ($result_employees->num_rows > 0) {
         $employees[] = $row;
     }
 }
-
-// Return leads and employees as JSON
 $response = [
     'tasks' => $leads,
     'employees' => $employees
 ];
-
 header('Content-Type: application/json');
 echo json_encode($response);
 

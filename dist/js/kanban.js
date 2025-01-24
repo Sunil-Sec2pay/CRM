@@ -1,20 +1,23 @@
-$(() => {
-    const statuses = ['To Do', 'In Progress', 'Pending', 'Hold', 'Done', 'Completed','Lost'];
-       $.ajax({
-        url: 'fetch_data.php', 
-        type: 'GET',
-        dataType: 'json',
-        success: function (response) {
-            console.log("response===>",response);
-            const tasks = response.tasks;
-            const employees = response.employees;
-            renderKanban($('#kanban'), statuses, tasks, employees);
-        },
-        error: function () {
-            alert("Error fetching data from the server.");
-        }
-    });
 
+    const statuses = ['To Do', 'In Progress', 'Pending', 'Hold', 'Done', 'Completed','Lost'];
+    getLeads(statuses);
+    function getLeads(statuses){
+        $.ajax({
+            url: 'action.php', 
+            type: 'POST',
+            data: {action:'get_leads'},
+            dataType: 'json',
+            success: function (response) {
+                console.log("response===>",response);
+                const tasks = response.tasks;
+                const employees = response.employees;
+                renderKanban($('#kanban'), statuses, tasks, employees);
+            },
+            error: function () {
+                alert("Error fetching data from the server.");
+            }
+        });
+    }
     function renderKanban($container, statusList, tasks, employees) {
         statusList.forEach((status) => {
             renderList($container, status, tasks, employees);
@@ -52,14 +55,17 @@ $(() => {
                         alert('Lead ID or new status not assigned.');
                         return;
                     }
+                    if (lead_status == newStatus) {
+                        return;
+                    }
                     $.ajax({
-                        url: 'lead_status_update.php',
+                        url: 'action.php',
                         type: 'POST',
                         data: {
+                            action: 'set_lead_status',
                             lead_id: lead_id,
                             new_lead_status: newStatus,
                             lead_status: lead_status,
-                            action: "lead_status_update",
                         },
                         success: function (response) {
                             console.log('Server Response:', response);
@@ -161,7 +167,9 @@ $(() => {
             $('<span>').addClass('text-secondary me-2').text('Unassigned').appendTo($assignedUsers);
         }
         $('<i>').addClass('fa fa-user-plus text-secondary').attr('title', 'Assign User').on('click', function () {
+            loadUsers(lead.assigned_user_ids);
             $("#leadAssignUserForm")[0].reset();
+            $("#lead_id").val(lead.lead_id);
             $('#leadAssignUserModal').modal('show');
 
         }).appendTo($infoLine2);
@@ -194,4 +202,5 @@ $(() => {
         }
     }
     
-});
+
+    

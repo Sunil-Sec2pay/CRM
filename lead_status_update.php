@@ -20,9 +20,7 @@ if (!isset($input['lead_id'])) {
     exit;
 }
 try {
-    
     $new_lead_status = $_POST["new_lead_status"];
-
     switch ($new_lead_status) {
         case "To Do":
             $new_lead_status= "To Do";
