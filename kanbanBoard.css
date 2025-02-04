@@ -12,13 +12,17 @@
   }
   
   .list-title {
-    color: var(--dx-color-text);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
     font-size: 16px;
     padding: 10px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     margin-bottom: -10px;
+    margin:5px ;
     font-weight: bold;
     cursor: pointer;
+    background-color: red;
   }
   
   .scrollable-list {
@@ -36,7 +40,7 @@
     background-color: var(--dx-component-color-bg);
     box-sizing: border-box;
     width: 230px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 10px;
     cursor: pointer;
   }

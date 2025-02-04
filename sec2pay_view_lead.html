@@ -1,12 +1,4 @@
 <!doctype html>
-<!--
-* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
-* @version 1.0.0-beta20
-* @link https://tabler.io
-* Copyright 2018-2023 The Tabler Authors
-* Copyright 2018-2023 codecalm.net Paweł Kuna
-* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
--->
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
@@ -19,6 +11,7 @@
     <link href="./dist/css/tabler-payments.min.css?1692870487" rel="stylesheet"/>
     <link href="./dist/css/tabler-vendors.min.css?1692870487" rel="stylesheet"/>
     <link href="./dist/css/demo.min.css?1692870487" rel="stylesheet"/>
+    <link href="./dist/css/comman_styles.css" rel="stylesheet"/>
     <style>
       @import url('https://rsms.me/inter/inter.css');
       :root {
@@ -47,21 +40,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-
-
-
-
-
-
-
-        
-
-
-
-    </style>
-
-    <style>
       .step-bar {
         position: relative;
         list-style: none;
@@ -70,12 +48,10 @@
         text-align: center;
         width: 100%;
         overflow: hidden;
-         
         counter-reset: step-number;
       }
       @media (min-width: 768px) {
         .step-bar {
-         
           display: -webkit-box;
           display: -moz-box;
           display: box;
@@ -249,10 +225,7 @@
           width: 40px;
           height: 40px;
         }
-      
       }
- 
-
     </style>
   </head>
   <body >
@@ -868,8 +841,6 @@
                 </h2>
               </div> 
             </div>
-
-
             <div class="row mt-3"> 
                 <!-- Left Side: Lead Details -->
                 <div class="col-md-4 fixed-height">
@@ -877,10 +848,8 @@
                         <!-- Header Section -->
                         <div class="card-header d-flex justify-content-between align-items-center bg-white">
                             <h3 class="mb-0">Lead Title</h3>
-                          
                             <span class="badge bg-danger text-white">11 Days</span>
                         </div>
-
                         <!-- Action Buttons -->
                         <div class="card-body">
                             <div class="d-flex justify-content-around mb-4">
@@ -889,19 +858,16 @@
                                     <i class="bi bi-envelope-fill fs-4"></i>
                                     <span>Mail</span>
                                 </button>
-
                                 <!-- File Button -->
                                 <button class="btn btn-light text-info d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#fileModal">
                                     <i class="bi bi-file-earmark-fill fs-4"></i>
                                     <span>File</span>
                                 </button>
-
                                 <!-- Note Button -->
                                 <button class="btn btn-light text-warning d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#noteModal">
                                     <i class="bi bi-sticky-fill fs-4"></i>
                                     <span>Note</span>
                                 </button>
-
                                 <!-- Activity Button -->
                                 <button class="btn btn-light text-primary d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#activityModal">
                                     <i class="bi bi-calendar-event-fill fs-4"></i>
@@ -1106,10 +1072,7 @@
                     </div>
                 </div>
               </div>
-             
             </div>
-
-
           </div>
         </div>
         <!-- Page body -->
@@ -1131,7 +1094,7 @@
                       <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
                       <svg xmlns="http://www.w3.org/2000/svg" class="icon text-pink icon-filled icon-inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
                       Sponsor
-                    </a>
+                    </a>  
                   </li>
                 </ul>
               </div>
@@ -1156,8 +1119,6 @@
     </div>
     <!-- Libs JS -->
     <!-- Tabler Core --> 
- 
-
 
     <script src="./dist/js/tabler.min.js?1692870487" defer></script>
     <script src="./dist/js/demo.min.js?1692870487" defer></script>

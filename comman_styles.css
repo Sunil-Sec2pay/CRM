@@ -1,0 +1,613 @@
+.button {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    width: 120px;
+    font-weight: 500;
+  
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+  }
+
+  .button:hover {
+    background: linear-gradient(90deg, #0056b3, #004080);
+    color: #fff;
+  } 
+
+  .button_delete {
+    background: linear-gradient(90deg, #ff004c, #b30000);
+    color: #fff;
+    border: none;
+    width: 150px;
+    font-weight: 500;
+    padding: 8px; 
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+  }
+
+  .button_delete:hover {
+    background: linear-gradient(90deg, #b30000, #800000);
+    color: #fff;
+    } 
+
+
+
+
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Profile Page CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/ 
+ 
+    .view-profile-modal {
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .profile-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      .profile-header .profile-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #007bff;
+      }
+
+      .profile-header .profile-info h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .profile-header .profile-info p {
+        margin: 0;
+        color: #6c757d;
+      }
+
+      .profile-form .form-group label {
+        font-weight: 500;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      .profile-form .form-control {
+        border-radius: 5px;
+      }
+
+      .profile-photo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .profile-photo img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .modal-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .modal-footer .button_delete{
+        border-radius: 5px;
+      }
+      .modal-footer .button{
+        border-radius: 5px;
+      } 
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Profile Page CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< View Lead Page CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+     
+    .mail-modal {
+    background-color: #fef8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .mail-icon {
+    font-size: 50px;
+    color: #007bff;
+    }
+
+    .file-icon{
+    font-size: 50px;
+    color: #fd621a;
+    }
+
+    /* Input Styling */
+    .mail-input {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .mail-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+    }
+ 
+    /* Note List Modal CSS */ 
+    .note-modal {
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .note-modal .modal-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .note-modal .modal-body {
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    /* Note List Modal CSS  Note Item Styling */
+    .note-item {
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        transition: transform 0.2s ease;
+    }
+
+    .note-item:hover {
+        transform: translateY(-2px);
+        background-color: #ffffff;
+    }
+
+    .note-item img {
+        border: 2px solid #007bff;
+    }
+
+    .note-item button {
+        color: #007bff;
+        border: 1px solid #007bff;
+        background-color: #ffffff;
+    }
+
+    .note-item button:hover {
+        background-color: #007bff;
+        color: #ffffff;
+    }
+
+    /* Create Note Button */
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    /* Note List Modal CSS */  
+        /* Small Modal Styling */
+    .small-note-modal {
+        position: absolute;
+        top: 35px; /* Position below the SVG */
+        right: 0;
+        width: 300px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1055; /* Ensure it stays above the parent modal */
+    }
+
+    .small-note-modal .modal-content {
+        border: none;
+        border-radius: 8px;
+    }
+
+    .small-note-modal h6 {
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+
+    .small-note-modal input {
+        font-size: 14px;
+    }
+
+    .small-note-modal button {
+        font-size: 12px;
+        padding: 0.25rem 0.5rem;
+    }
+
+    /* Hide modal by default */
+    .d-none {
+        display: none !important;
+    }
+
+
+    .step-bar {
+        position: relative;
+        list-style: none;
+        margin-top: 35px;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+         
+        counter-reset: step-number;
+      }
+      @media (min-width: 768px) {
+        .step-bar {
+         
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -moz-flex;
+          display: flex;
+          box-orient: horizontal;
+          box-direction: normal;
+          -moz-flex-direction: row;
+          flex-direction: row;
+        }
+      }
+      .step-bar > li {
+        width: 100%;
+        position: relative;
+        background-color: #eee;
+        font-size: 12px;
+      
+      }
+      @media (max-width: 767px) {
+        .step-bar > li {
+          padding: 10px;
+          margin-bottom: 5px;
+        }
+      }
+      .step-bar > li > a {
+        transition: none !important;
+        text-decoration: none;
+        display: block;
+        color: white;
+      }
+      .step-bar > li > a:before {
+        counter-increment: step-number;
+        content: counter(step-number) ". ";
+      }
+    .step-bar > li:before, .step-bar > li:after {
+      position: absolute;
+      display: block;
+      content: "";
+      background-color: #eee;
+      border-left: 4px solid #fff;
+      top: 0;
+    }
+    .step-bar > li:after {
+      transform: skew(-30deg);
+    }
+      .step-bar > li:before {
+        transform: skew(30deg);
+      }
+      .step-bar > li:first-child:before, .step-bar > li:first-child:after {
+        background: white;
+        content: none;
+      }
+      .step-bar > li.active {
+        background-color: #337ab7;
+      }
+      .step-bar > li.active:before, .step-bar > li.active:after {
+        background-color: #337ab7;
+      }
+      .step-bar > li.active:hover {
+        background-color: #285f8f;
+      }
+      .step-bar > li.active:hover:before, .step-bar > li.active:hover:after {
+        background-color: #285f8f;
+      }
+      .step-bar > li.complete {
+        background-color: #5cb85c;
+      }
+      .step-bar > li.complete:before, .step-bar > li.complete:after {
+        background-color: #5cb85c;
+      }
+      .step-bar > li.complete:hover {
+        background: #449d44;
+      }
+      .step-bar > li.complete:hover:before, .step-bar > li.complete:hover:after {
+        background-color: #449d44;
+      }
+      .step-bar > li.danger {
+        background-color: #d9534f;
+      }
+      .step-bar > li.danger:before, .step-bar > li.danger:after {
+        background-color: #d9534f;
+      }
+      .step-bar > li.danger:hover {
+        background: #c9302c;
+      }
+      .step-bar > li.danger:hover:before, .step-bar > li.danger:hover:after {
+        background-color: #c9302c;
+      }
+      .step-bar > li.warning {
+        background-color: #fd8c4a;
+      }
+      .step-bar > li.warning:before, .step-bar > li.warning:after {
+        background-color: #fd8c4a;
+      }
+      .step-bar > li.disabled {
+        pointer-events: none;
+      }
+      .step-bar > li.disabled > a {
+        color: #a2a2a2;
+      }
+      @media (min-width: 768px) {
+        .step-bar > li {
+          line-height: 32px;
+          padding: 0 24px 0 16px;
+        }
+        .step-bar > li:before, .step-bar > li:after {
+          left: -8px;
+          width: 16px;
+          height: 16px;
+        }
+        .step-bar > li:after {
+          top: 16px;
+        }
+      }
+      @media (min-width: 768px) and (min-width: 768px) {
+        .step-bar > li:first-child {
+          padding-left: 16px;
+        }
+      }
+      @media (min-width: 768px) {
+        .step-bar.sm > li {
+          line-height: 24px;
+          padding: 0 18px 0 12px;
+        }
+        .step-bar.sm > li:before, .step-bar.sm > li:after {
+          left: -6px;
+          width: 12px;
+          height: 12px;
+        }
+        .step-bar.sm > li:after {
+          top: 12px;
+        }
+      }
+      @media (min-width: 768px) and (min-width: 768px) {
+        .step-bar.sm > li:first-child {
+          padding-left: 12px;
+        }
+      }
+      .step-bar.sm > li {
+        font-size: 12px;
+      }
+      @media (min-width: 768px) {
+        .step-bar.md > li {
+          line-height: 40px;
+          padding: 0 30px 0 20px;
+        }
+        .step-bar.md > li:before, .step-bar.md > li:after {
+          left: -10px;
+          width: 20px;
+          height: 20px;
+        }
+        .step-bar.md > li:after {
+          top: 20px;
+        }
+      }
+      @media (min-width: 768px) and (min-width: 768px) {
+        .step-bar.md > li:first-child {
+          padding-left: 20px;
+        }
+      }
+      .step-bar.md > li {
+        font-size: 14px;
+      }
+      @media (min-width: 768px) {
+        .step-bar.lg > li {
+          line-height: 80px;
+          padding: 0 60px 0 40px;
+        }
+        .step-bar.lg > li:before, .step-bar.lg > li:after {
+          left: -20px;
+          width: 40px;
+          height: 40px;
+        }
+      
+      } 
+
+    /* Activity Timeline */
+    .activity-timeline {
+        padding: 10px;
+        }
+    
+        .activity-day {
+        margin-bottom: 20px;
+        }
+    
+        .activity-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        }
+    
+        .activity-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 15px;
+        }
+    
+        .activity-content {
+        flex-grow: 1;
+        }
+    
+        .activity-content p {
+        margin: 0;
+        }
+    
+        .activity-content .btn {
+        margin-top: 5px;
+        }
+    
+        /* Activity Badge Classes */
+        .activity-badge {
+        font-size: 0.75rem;
+        padding: 0.35em 0.6em;
+        border-radius: 0.25rem;
+        display: inline-block;
+        }
+    
+        .activity-badge-info {
+        background-color: #17a2b8;
+        color: #fff;
+        }
+    
+        .activity-badge-secondary {
+        background-color: #6c757d;
+        color: #fff;
+        }
+    
+        .activity-badge-warning {
+        background-color: #ffc107;
+        color: #212529;
+        }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< View Lead Page CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Leads Page CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+         /* Edited : Abhishek Chandane  */ 
+         .quick-action-btn {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: #fff;
+            border: none;
+            font-weight: 100;
+            border-radius: 5px; 
+            transition: all 0.3s ease;
+          }
+    
+          .quick-action-btn:hover {
+            background: linear-gradient(90deg, #0056b3, #004080);
+            color: #fff;
+          }
+    
+          /* Dropdown menu styling */
+          .quick-action-dropdown {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          }
+    
+          .quick-action-dropdown .dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+          }
+    
+          .quick-action-dropdown .dropdown-item:hover {
+            background-color: #f0f0f0;
+          }
+    
+          .quick-action-dropdown .dropdown-item i {
+            font-size: 16px;
+            color: #007bff;
+          }
+     
+            .tooltip {
+            background-color: #333333 !important;                 
+            color: #fff !important;                 
+            border-radius: 8px !important;                 
+                          
+            font-size: 14px;                 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);                 
+            max-width: 250px;                 
+          }
+    
+          .tooltip .tooltip-inner {
+            background: linear-gradient(90deg, #007bff, #0056b3) !important;
+            color: #fff !important;
+            text-align: left !important;  
+            font-family: Arial, sans-serif;
+          }
+    
+          .tooltip-arrow {
+            border-top-color: #333 !important;  
+          }
+          .tooltip.fade {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+          }
+          .tooltip.show {
+            opacity: 1;
+      }
+     
+          /* Call Now Modal */
+            .call-now-modal {
+              background-color: #f8fef8; /* Light green background */
+              border-radius: 12px;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+              position: relative;
+            }
+    
+    
+            .call-icon {
+              font-size: 50px;
+              color: #007bff; 
+            }
+    
+            .modal-title {
+              font-size: 20px;
+              font-weight: 600;
+              color: #333;
+            }
+    
+            .modal-description {
+              font-size: 16px;
+              color: #666;
+            }
+           /* Call Now Modal */ 
+          /* Edited : Abhishek Chandane  */
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Leads Page CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
